@@ -19,6 +19,11 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Responsive css -->
     <link rel="stylesheet" href="css/responsive.css">
+	<style>
+	html {
+		  scroll-behavior: smooth;
+		}
+	</style>
 </head>
 
 <body>
@@ -133,7 +138,7 @@
                                                 <li><a href="blog-grid.html">News Grid</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Contactos</a></li>
+                                        <li><a href="#contactos">Contactos</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -219,60 +224,32 @@
                 </div>
                 <button class="ltn__utilize-close">×</button>
             </div>
-            <div class="ltn__utilize-menu-search-form">
-                <form action="#">
-                    <input type="text" placeholder="Search...">
-                    <button><i class="icon-magnifier"></i></button>
-                </form>
-            </div>
             <div class="ltn__utilize-menu">
                 <ul>
-                    <li><a href="#">Home</a>
+                    <li><a href="#">Início</a>
                         <ul class="sub-menu">
                             <li><a href="index.html">Home Style - 01</a></li>
                             <li><a href="index-2.html">Home Style - 02</a></li>
                         </ul>
                     </li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="#">Shop</a>
-                        <ul class="sub-menu">
-                            <li><a href="shop.html">Shop</a></li>
-                            <li><a href="shop-grid.html">Shop Grid</a></li>
-                            <li><a href="shop-left-sidebar.html">Shop Left sidebar</a></li>
-                            <li><a href="shop-right-sidebar.html">Shop right sidebar</a></li>
-                            <li><a href="product-details.html">Shop details </a></li>
-                            <li><a href="cart.html">Cart</a></li>
-                            <li><a href="wishlist.html">Wishlist</a></li>
-                            <li><a href="checkout.html">Checkout</a></li>
-                            <li><a href="order-tracking.html">Order Tracking</a></li>
-                            <li><a href="account.html">My Account</a></li>
-                            <li><a href="login.html">Sign in</a></li>
-                            <li><a href="register.html">Register</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">News</a>
+                    <li><a href="about.html">Comprar</a></li>
+                    <li><a href="#">Catálogo</a>
                         <ul class="sub-menu">
                             <li><a href="blog.html">News</a></li>
                             <li><a href="blog-grid.html">News Grid</a></li>
                             <li><a href="blog-left-sidebar.html">News Left sidebar</a></li>
-                            <li><a href="blog-right-sidebar.html">News Right sidebar</a></li>
-                            <li><a href="blog-details.html">News details</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Pages</a>
+                    <li><a href="#">Conselhos</a>
                         <ul class="sub-menu">
                             <li><a href="about.html">About Us</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="portfolio-2.html">Portfolio - 02</a></li>
                             <li><a href="portfolio-details.html">Portfolio Details</a></li>
                             <li><a href="faq.html">FAQ</a></li>
                             <li><a href="locations.html">Google Map Locations</a></li>
                             <li><a href="404.html">404</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="coming-soon.html">Coming Soon</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#contactos">Contactos</a></li>
                 </ul>
             </div>
             <div class="ltn__utilize-buttons ltn__utilize-buttons-2">
@@ -505,209 +482,88 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title-area text-center">
-                        <h1 class="section-title section-title-border">novidades</h1>
+                        <h1 class="section-title section-title-border">COMPRAR</h1>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <!-- ltn__product-item -->
+                <!-- ltn__product-item 1-->
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <div class="ltn__product-item text-center">
                         <div class="product-img">
                             <a href="product-details.html"><img src="img/product/1.jpg" alt="#"></a>
-                            <div class="product-badge">
+							<div class="product-badge">
                                 <ul>
-                                    <li class="badge-2">10%</li>
+                                    <li class="badge-1">Promoção</li>
                                 </ul>
                             </div>
-                            <div class="product-hover-action product-hover-action-2">
-                                <ul>
-                                    <li>
-                                        <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </li>
-                                    <li class="add-to-cart">
-                                        <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
-                                            <span class="cart-text d-none d-xl-block">Add to Cart</span>
-                                            <span class="d-block d-xl-none"><i class="icon-handbag"></i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
-                                            <i class="icon-shuffle"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+						</div>
                         <div class="product-info">
                             <h2 class="product-title"><a href="product-details.html">Pink Flower Tree</a></h2>
                             <div class="product-price">
-                                <span>$18.00</span>
-                                <del>$21.00</del>
+                                <span>€18.00</span>
+                                <del>€21.00</del>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- ltn__product-item -->
+                <!-- ltn__product-item 2-->
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <div class="ltn__product-item text-center">
                         <div class="product-img">
-                            <a href="product-details.html"><img src="img/product/2.jpg" alt="#"></a>
-                            <div class="product-badge">
-                                <ul>
-                                    <li class="badge-1">Hot</li>
-                                </ul>
-                            </div>
-                            <div class="product-hover-action product-hover-action-2">
-                                <ul>
-                                    <li>
-                                        <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </li>
-                                    <li class="add-to-cart">
-                                        <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
-                                            <span class="cart-text d-none d-xl-block">Add to Cart</span>
-                                            <span class="d-block d-xl-none"><i class="icon-handbag"></i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
-                                            <i class="icon-shuffle"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <a href="product-details.html"><img src="img/product/2.jpg" alt="#"></a>                            
                         </div>
                         <div class="product-info">
                             <h2 class="product-title"><a href="product-details.html">Premium Joyful</a></h2>
                             <div class="product-price">
-                                <span>$18.00</span>
+                                <span>€18.00</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- ltn__product-item -->
+                <!-- ltn__product-item 3-->
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <div class="ltn__product-item text-center">
                         <div class="product-img">
                             <a href="product-details.html"><img src="img/product/3.jpg" alt="#"></a>
-                            <div class="product-badge">
-                                <ul>
-                                    <li class="badge-2">12%</li>
-                                </ul>
-                            </div>
-                            <div class="product-hover-action product-hover-action-2">
-                                <ul>
-                                    <li>
-                                        <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </li>
-                                    <li class="add-to-cart">
-                                        <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
-                                            <span class="cart-text d-none d-xl-block">Add to Cart</span>
-                                            <span class="d-block d-xl-none"><i class="icon-handbag"></i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
-                                            <i class="icon-shuffle"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                         <div class="product-info">
                             <h2 class="product-title"><a href="product-details.html">The White Rose</a></h2>
                             <div class="product-price">
-                                <span>$16.00</span>
-                                <del>$19.00</del>
+                                <span>€16.00</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- ltn__product-item -->
+                <!-- ltn__product-item 4-->
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <div class="ltn__product-item text-center">
                         <div class="product-img">
                             <a href="product-details.html"><img src="img/product/4.jpg" alt="#"></a>
-                            <div class="product-badge">
-                                <ul>
-                                    <li class="badge-1">Hot</li>
-                                </ul>
-                            </div>
-                            <div class="product-hover-action product-hover-action-2">
-                                <ul>
-                                    <li>
-                                        <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </li>
-                                    <li class="add-to-cart">
-                                        <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
-                                            <span class="cart-text d-none d-xl-block">Add to Cart</span>
-                                            <span class="d-block d-xl-none"><i class="icon-handbag"></i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
-                                            <i class="icon-shuffle"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                         <div class="product-info">
                             <h2 class="product-title"><a href="product-details.html">Red Rose Bouquet</a></h2>
                             <div class="product-price">
-                                <span>$20.00</span>
+                                <span>€20.00</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- ltn__product-item -->
+                <!-- ltn__product-item 5-->
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <div class="ltn__product-item text-center">
                         <div class="product-img">
                             <a href="product-details.html"><img src="img/product/5.jpg" alt="#"></a>
-                            <div class="product-badge">
-                                <ul>
-                                    <li class="badge-1">Hot</li>
-                                </ul>
-                            </div>
-                            <div class="product-hover-action product-hover-action-2">
-                                <ul>
-                                    <li>
-                                        <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </li>
-                                    <li class="add-to-cart">
-                                        <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
-                                            <span class="cart-text d-none d-xl-block">Add to Cart</span>
-                                            <span class="d-block d-xl-none"><i class="icon-handbag"></i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
-                                            <i class="icon-shuffle"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                         <div class="product-info">
                             <h2 class="product-title"><a href="product-details.html">Heart's Desire</a></h2>
                             <div class="product-price">
-                                <span>$15.00</span>
+                                <span>€15.00</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- ltn__product-item -->
+                <!-- ltn__product-item 6-->
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <div class="ltn__product-item text-center">
                         <div class="product-img">
@@ -718,27 +574,13 @@
                                 </ul>
                             </div>
                             <div class="product-hover-action product-hover-action-2">
-                                <ul>
-                                    <li>
-                                        <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </li>
-                                    <li class="add-to-cart">
-                                        <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
-                                            <span class="cart-text d-none d-xl-block">Add to Cart</span>
-                                            <span class="d-block d-xl-none"><i class="icon-handbag"></i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
-                                            <i class="icon-shuffle"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="ltn__product-countdown">
-                                <div class="ltn__countdown" data-countdown="2021/03/25"></div>
+                                
+								<li>
+									<a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
+										<i class="icon-magnifier"></i>
+									</a>
+								</li>        
+                               
                             </div>
                         </div>
                         <div class="product-info">
@@ -749,32 +591,17 @@
                         </div>
                     </div>
                 </div>
-                <!-- ltn__product-item -->
+                <!-- ltn__product-item 7-->
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <div class="ltn__product-item text-center">
                         <div class="product-img">
                             <a href="product-details.html"><img src="img/product/7.jpg" alt="#"></a>
-                            <div class="product-badge">
-                                <ul>
-                                    <li class="badge-1">Hot</li>
-                                </ul>
-                            </div>
+                           
                             <div class="product-hover-action product-hover-action-2">
                                 <ul>
                                     <li>
                                         <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
                                             <i class="icon-magnifier"></i>
-                                        </a>
-                                    </li>
-                                    <li class="add-to-cart">
-                                        <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
-                                            <span class="cart-text d-none d-xl-block">Add to Cart</span>
-                                            <span class="d-block d-xl-none"><i class="icon-handbag"></i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
-                                            <i class="icon-shuffle"></i>
                                         </a>
                                     </li>
                                 </ul>
@@ -783,12 +610,12 @@
                         <div class="product-info">
                             <h2 class="product-title"><a href="product-details.html">Roses Surprise</a></h2>
                             <div class="product-price">
-                                <span>$12.00</span>
+                                <span>€12.00</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- ltn__product-item -->
+                <!-- ltn__product-item 8-->
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <div class="ltn__product-item text-center">
                         <div class="product-img">
@@ -805,25 +632,14 @@
                                             <i class="icon-magnifier"></i>
                                         </a>
                                     </li>
-                                    <li class="add-to-cart">
-                                        <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
-                                            <span class="cart-text d-none d-xl-block">Add to Cart</span>
-                                            <span class="d-block d-xl-none"><i class="icon-handbag"></i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
-                                            <i class="icon-shuffle"></i>
-                                        </a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="product-info">
                             <h2 class="product-title"><a href="product-details.html">Tropical Peace Lily</a></h2>
                             <div class="product-price">
-                                <span>$14</span>
-                                <del>$25.00</del>
+                                <span>€14</span>
+                                <del>€25.00</del>
                             </div>
                         </div>
                     </div>
@@ -862,7 +678,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title-area text-center">
-                        <h1 class="section-title section-title-border">destaques</h1>
+                        <h1 class="section-title section-title-border">CATÁLOGO</h1>
                     </div>
                 </div>
             </div>
@@ -1091,7 +907,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title-area text-center">
-                        <h1 class="section-title section-title-border">sugestões</h1>
+                        <h1 class="section-title section-title-border">CONSELHOS</h1>
                     </div>
                 </div>
             </div>
@@ -1109,14 +925,11 @@
                                         <a href="#">by: Admin</a>
                                     </li>
                                     <li>
-                                        <span> Nov 18, 2020</span>
-                                    </li>
-                                    <li class="ltn__blog-comment">
-                                        <a href="#"><i class="icon-speech"></i> 2</a>
+                                        <span> Plantas Frescas</span>
                                     </li>
                                 </ul>
                             </div>
-                            <h3 class="ltn__blog-title blog-title-line"><a href="blog-details.html">Lorem ipsum dolor sit amet con adipisicing elit sed </a></h3>
+                            <h3 class="ltn__blog-title blog-title-line"><a href="blog-details.html">Logo que possa coloque as suas flores num recipiente com água.</a></h3>
                         </div>
                     </div>
                 </div>
@@ -1182,9 +995,6 @@
                                     </li>
                                     <li>
                                         <span> Nov 18, 2020</span>
-                                    </li>
-                                    <li class="ltn__blog-comment">
-                                        <a href="#"><i class="icon-speech"></i> 2</a>
                                     </li>
                                 </ul>
                             </div>
@@ -1267,7 +1077,7 @@
     <!-- BRAND LOGO AREA END -->
 
     <!-- FOOTER AREA START -->
-    <footer class="ltn__footer-area ">
+    <footer class="ltn__footer-area" id="contactos">
         <div class="footer-top-area  section-bg-5">
             <div class="container">
                 <div class="row">
@@ -1316,9 +1126,6 @@
                                     <li><a href="#" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
                                     <li><a href="#" title="Youtube"><i class="fab fa-youtube"></i></a></li>
                                 </ul>
-                            </div>
-                            <div class="footer-payment-img">
-                                <img src="img/icons/payment-6.png" alt="Payment Image">
                             </div>
                         </div>
                     </div>
@@ -1370,10 +1177,7 @@
                                     <li><a href="#" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
                                     <li><a href="#" title="Youtube"><i class="fab fa-youtube"></i></a></li>
                                 </ul>
-                            </div>
-                            <div class="footer-payment-img">
-                                <img src="img/icons/payment-6.png" alt="Payment Image">
-                            </div>
+                            </div>                          
                         </div>
                     </div>
                 </div>
