@@ -23,6 +23,7 @@
 	html {
 		  scroll-behavior: smooth;
 		}
+	.ltn__blog-title {font-size:20px}	
 	</style>
 </head>
 
@@ -39,7 +40,7 @@
     <!-- HEADER AREA START (header-3) -->
     <header class="ltn__header-area ltn__header-3 section-bg-6">        
         <!-- ltn__header-middle-area start -->
-        <div class="ltn__header-middle-area">
+        <div id="inicio" class="ltn__header-middle-area">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -113,32 +114,11 @@
                             <nav>
                                 <div class="ltn__main-menu">
                                     <ul>
-                                        <li class="menu-icon"><a href="#">Início</a>
-                                            <ul>
-                                                <li><a href="index.html">Home Style - 01</a></li>
-                                                <li><a href="index-2.html">Home Style - 02</a></li>
-                                            </ul>
-                                        </li>                      
-                                        <li class="menu-icon"><a href="#">Comprar</a>
-                                            <ul>
-                                                <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="shop-grid.html">Shop Grid</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-icon"><a href="#">Catálogo</a>
-                                            <ul>
-                                                <li><a href="portfolio.html">Portfolio</a></li>
-                                                <li><a href="portfolio-2.html">Portfolio - 02</a></li>
-                                                <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-icon"><a href="#">Conselhos</a>
-                                            <ul>
-                                                <li><a href="blog.html">News</a></li>
-                                                <li><a href="blog-grid.html">News Grid</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#contactos">Contactos</a></li>
+                                        <li class="menu-icon"><a href="#inicio">Início</a></li>                      
+                                        <li class="menu-icon"><a href="#comprar_lg">Comprar</a></li>
+                                        <li class="menu-icon"><a href="#catalogo_lg">Catálogo</a></li>
+                                        <li class="menu-icon"><a href="#conselhos_lg">Conselhos</a></li>
+                                        <li><a href="#contactos_lg">Contactos</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -151,7 +131,7 @@
     </header>
     <!-- HEADER AREA END -->
 
-    <!-- Utilize Cart Menu Start -->
+    <!-- Utilize Cart Menu Start 
     <div id="ltn__utilize-cart-menu" class="ltn__utilize ltn__utilize-cart-menu">
         <div class="ltn__utilize-menu-inner ltn__scrollbar">
             <div class="ltn__utilize-menu-head">
@@ -213,7 +193,7 @@
 
         </div>
     </div>
-    <!-- Utilize Cart Menu End -->
+   Utilize Cart Menu End -->
 
     <!-- Utilize Mobile Menu Start -->
     <div id="ltn__utilize-mobile-menu" class="ltn__utilize ltn__utilize-mobile-menu">
@@ -226,60 +206,11 @@
             </div>
             <div class="ltn__utilize-menu">
                 <ul>
-                    <li><a href="#">Início</a>
-                        <ul class="sub-menu">
-                            <li><a href="index.html">Home Style - 01</a></li>
-                            <li><a href="index-2.html">Home Style - 02</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="about.html">Comprar</a></li>
-                    <li><a href="#">Catálogo</a>
-                        <ul class="sub-menu">
-                            <li><a href="blog.html">News</a></li>
-                            <li><a href="blog-grid.html">News Grid</a></li>
-                            <li><a href="blog-left-sidebar.html">News Left sidebar</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Conselhos</a>
-                        <ul class="sub-menu">
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="locations.html">Google Map Locations</a></li>
-                            <li><a href="404.html">404</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#comprar">Comprar</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#conselhos">Conselhos</a></li>
                     <li><a href="#contactos">Contactos</a></li>
-                </ul>
-            </div>
-            <div class="ltn__utilize-buttons ltn__utilize-buttons-2">
-                <ul>
-                    <li>
-                        <a href="account.html" title="My Account">
-                            <span class="utilize-btn-icon">
-                                <i class="icon-user"></i>
-                            </span>
-                            My Account
-                        </a>
-                    </li>
-                    <li>
-                        <a href="wishlist.html" title="Wishlist">
-                            <span class="utilize-btn-icon">
-                                <i class="icon-heart"></i>
-                                <sup>3</sup>
-                            </span>
-                            Wishlist
-                        </a>
-                    </li>
-                    <li>
-                        <a href="cart.html" title="Shoping Cart">
-                            <span class="utilize-btn-icon">
-                                <i class="icon-handbag"></i>
-                                <sup>5</sup>
-                            </span>
-                            Shoping Cart
-                        </a>
-                    </li>
                 </ul>
             </div>
             <div class="ltn__social-media-2">
@@ -315,7 +246,7 @@
                                                     <p>Do viveiro para a mesa da sua sala.</p>
                                                 </div>
                                                 <div class="btn-wrapper animated">
-                                                    <a href="service.html" class="theme-btn-1 btn btn-round">Comprar Agora</a>
+                                                    <a href="#" class="theme-btn-1 btn btn-round">Comprar Agora</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -346,7 +277,7 @@
                                                     <p>Do viveiro para a mesa da sua sala.</p>
                                                 </div>
                                                 <div class="btn-wrapper animated">
-                                                    <a href="service.html" class="theme-btn-1 btn btn-round">Comprar Agora</a>
+                                                    <a href="#" class="theme-btn-1 btn btn-round">Comprar Agora</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -377,7 +308,7 @@
                                                     <p>Está a pensar em orquídeas? É natural, as delicadas flores da primavera ficam deslumbrantes em qualquer mesa da sala de estar.</p>
                                                 </div>
                                                 <div class="btn-wrapper animated">
-                                                    <a href="service.html" class="theme-btn-1 btn btn-round">Comprar Agora</a>
+                                                    <a href="#" class="theme-btn-1 btn btn-round">Comprar Agora</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -397,77 +328,28 @@
     </div>
     <!-- SLIDER AREA END -->
 
-    <!-- FEATURE AREA START ( Feature - 3)
-    <div class="ltn__feature-area mt-100 mt--65">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="ltn__feature-item-box-wrap ltn__feature-item-box-wrap-2 ltn__border section-bg-6">
-                        <div class="ltn__feature-item ltn__feature-item-8">
-                            <div class="ltn__feature-icon">
-                                <img src="img/icons/svg/8-trolley.svg" alt="#">
-                            </div>
-                            <div class="ltn__feature-info">
-                                <h4>Free shipping</h4>
-                                <p>On all orders over €49.00</p>
-                            </div>
-                        </div>
-                        <div class="ltn__feature-item ltn__feature-item-8">
-                            <div class="ltn__feature-icon">
-                                <img src="img/icons/svg/9-money.svg" alt="#">
-                            </div>
-                            <div class="ltn__feature-info">
-                                <h4>15 days returns</h4>
-                                <p>Moneyback guarantee</p>
-                            </div>
-                        </div>
-                        <div class="ltn__feature-item ltn__feature-item-8">
-                            <div class="ltn__feature-icon">
-                                <img src="img/icons/svg/10-credit-card.svg" alt="#">
-                            </div>
-                            <div class="ltn__feature-info">
-                                <h4>Secure checkout</h4>
-                                <p>Protected by Paypal</p>
-                            </div>
-                        </div>
-                        <div class="ltn__feature-item ltn__feature-item-8">
-                            <div class="ltn__feature-icon">
-                                <img src="img/icons/svg/11-gift-card.svg" alt="#">
-                            </div>
-                            <div class="ltn__feature-info">
-                                <h4>Offer & gift here</h4>
-                                <p>On all orders over</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- FEATURE AREA END 
-
     <!-- BANNER AREA START -->
-    <div class="ltn__banner-area  mt-80">
+    <div id="comprar_lg" class="ltn__banner-area  mt-80">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6">
                     <div class="ltn__banner-item">
                         <div class="ltn__banner-img">
-                            <a href="shop.html"><img src="img/banner/1.jpg" alt="Banner Image"></a>
+                            <img src="img/banner/1.jpg" alt="Banner Image">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="ltn__banner-item">
                         <div class="ltn__banner-img">
-                            <a href="shop.html"><img src="img/banner/2.jpg" alt="Banner Image"></a>
+                            <img src="img/banner/2.jpg" alt="Banner Image">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="ltn__banner-item">
                         <div class="ltn__banner-img">
-                            <a href="shop.html"><img src="img/banner/3.jpg" alt="Banner Image"></a>
+                            <img src="img/banner/3.jpg" alt="Banner Image">
                         </div>
                     </div>
                 </div>
@@ -477,7 +359,7 @@
     <!-- BANNER AREA END -->
 
     <!-- PRODUCT AREA START -->
-    <div class="ltn__product-area  pt-65 pb-40">
+    <div id="comprar" class="ltn__product-area  pt-65 pb-40">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -497,9 +379,18 @@
                                     <li class="badge-1">Promoção</li>
                                 </ul>
                             </div>
+							<div class="product-hover-action product-hover-action-2">
+                                <ul>
+                                    <li>
+                                        <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
+                                            <i class="icon-magnifier"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
 						</div>
                         <div class="product-info">
-                            <h2 class="product-title"><a href="product-details.html">Pink Flower Tree</a></h2>
+                            <h2 class="product-title"><a href="product-details.html">Flor 1</a></h2>
                             <div class="product-price">
                                 <span>€18.00</span>
                                 <del>€21.00</del>
@@ -514,7 +405,7 @@
                             <a href="product-details.html"><img src="img/product/2.jpg" alt="#"></a>                            
                         </div>
                         <div class="product-info">
-                            <h2 class="product-title"><a href="product-details.html">Premium Joyful</a></h2>
+                            <h2 class="product-title"><a href="product-details.html">Estrelícias</a></h2>
                             <div class="product-price">
                                 <span>€18.00</span>
                             </div>
@@ -528,7 +419,7 @@
                             <a href="product-details.html"><img src="img/product/3.jpg" alt="#"></a>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-title"><a href="product-details.html">The White Rose</a></h2>
+                            <h2 class="product-title"><a href="product-details.html">Flor 3</a></h2>
                             <div class="product-price">
                                 <span>€16.00</span>
                             </div>
@@ -542,7 +433,7 @@
                             <a href="product-details.html"><img src="img/product/4.jpg" alt="#"></a>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-title"><a href="product-details.html">Red Rose Bouquet</a></h2>
+                            <h2 class="product-title"><a href="product-details.html">Ramo de Rosas</a></h2>
                             <div class="product-price">
                                 <span>€20.00</span>
                             </div>
@@ -556,7 +447,7 @@
                             <a href="product-details.html"><img src="img/product/5.jpg" alt="#"></a>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-title"><a href="product-details.html">Heart's Desire</a></h2>
+                            <h2 class="product-title"><a href="product-details.html">Flor 5</a></h2>
                             <div class="product-price">
                                 <span>€15.00</span>
                             </div>
@@ -574,19 +465,19 @@
                                 </ul>
                             </div>
                             <div class="product-hover-action product-hover-action-2">
-                                
-								<li>
-									<a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
-										<i class="icon-magnifier"></i>
-									</a>
-								</li>        
-                               
+                                <ul>
+                                    <li>
+                                        <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
+                                            <i class="icon-magnifier"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-title"><a href="product-details.html">Assorted Roses</a></h2>
+                            <h2 class="product-title"><a href="product-details.html">Flor 6</a></h2>
                             <div class="product-price">
-                                <span>$17.00</span>
+                                <span>€17.00</span>
                             </div>
                         </div>
                     </div>
@@ -608,7 +499,7 @@
                             </div>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-title"><a href="product-details.html">Roses Surprise</a></h2>
+                            <h2 class="product-title"><a href="product-details.html">Peonias</a></h2>
                             <div class="product-price">
                                 <span>€12.00</span>
                             </div>
@@ -636,7 +527,7 @@
                             </div>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-title"><a href="product-details.html">Tropical Peace Lily</a></h2>
+                            <h2 class="product-title"><a href="product-details.html">Sanseverias</a></h2>
                             <div class="product-price">
                                 <span>€14</span>
                                 <del>€25.00</del>
@@ -650,7 +541,7 @@
     <!-- PRODUCT SLIDER AREA END -->
 
     <!-- BANNER AREA START -->
-    <div class="ltn__banner-area ">
+    <div id="catalogo_lg" class="ltn__banner-area ">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -673,7 +564,7 @@
     <!-- BANNER AREA END -->
 
     <!-- PRODUCT SLIDER AREA START -->
-    <div class="ltn__product-slider-area  pt-60 pb-40">
+    <div id="catalogo" class="ltn__product-slider-area  pt-60 pb-40">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -683,16 +574,12 @@
                 </div>
             </div>
             <div class="row ltn__product-slider-item-four-active slick-arrow-1">
-                <!-- ltn__product-item -->
+                <!-- ltn__product-item 9-->
                 <div class="col-12">
                     <div class="ltn__product-item text-center">
                         <div class="product-img">
                             <a href="product-details.html"><img src="img/product/1.jpg" alt="#"></a>
-                            <div class="product-badge">
-                                <ul>
-                                    <li class="badge-2">10%</li>
-                                </ul>
-                            </div>
+                            
                             <div class="product-hover-action product-hover-action-2">
                                 <ul>
                                     <li>
@@ -700,39 +587,22 @@
                                             <i class="icon-magnifier"></i>
                                         </a>
                                     </li>
-                                    <li class="add-to-cart">
-                                        <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
-                                            <span class="cart-text d-none d-xl-block">Add to Cart</span>
-                                            <span class="d-block d-xl-none"><i class="icon-handbag"></i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
-                                            <i class="icon-shuffle"></i>
-                                        </a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-title"><a href="product-details.html">Pink Flower Tree</a></h2>
+                            <h2 class="product-title"><a href="product-details.html">Flor X</a></h2>
                             <div class="product-price">
-                                <span>$18.00</span>
-                                <del>$21.00</del>
+                                <span>€18.00</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- ltn__product-item -->
+                <!-- ltn__product-item 10-->
                 <div class="col-12">
                     <div class="ltn__product-item text-center">
                         <div class="product-img">
                             <a href="product-details.html"><img src="img/product/2.jpg" alt="#"></a>
-                            <div class="product-badge">
-                                <ul>
-                                    <li class="badge-1">Hot</li>
-                                </ul>
-                            </div>
                             <div class="product-hover-action product-hover-action-2">
                                 <ul>
                                     <li>
@@ -740,22 +610,11 @@
                                             <i class="icon-magnifier"></i>
                                         </a>
                                     </li>
-                                    <li class="add-to-cart">
-                                        <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
-                                            <span class="cart-text d-none d-xl-block">Add to Cart</span>
-                                            <span class="d-block d-xl-none"><i class="icon-handbag"></i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
-                                            <i class="icon-shuffle"></i>
-                                        </a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-title"><a href="product-details.html">Premium Joyful</a></h2>
+                            <h2 class="product-title"><a href="product-details.html">Flor Y</a></h2>
                             <div class="product-price">
                                 <span>€18.00</span>
                             </div>
@@ -767,11 +626,6 @@
                     <div class="ltn__product-item text-center">
                         <div class="product-img">
                             <a href="product-details.html"><img src="img/product/3.jpg" alt="#"></a>
-                            <div class="product-badge">
-                                <ul>
-                                    <li class="badge-2">12%</li>
-                                </ul>
-                            </div>
                             <div class="product-hover-action product-hover-action-2">
                                 <ul>
                                     <li>
@@ -779,25 +633,13 @@
                                             <i class="icon-magnifier"></i>
                                         </a>
                                     </li>
-                                    <li class="add-to-cart">
-                                        <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
-                                            <span class="cart-text d-none d-xl-block">Add to Cart</span>
-                                            <span class="d-block d-xl-none"><i class="icon-handbag"></i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
-                                            <i class="icon-shuffle"></i>
-                                        </a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-title"><a href="product-details.html">The White Rose</a></h2>
+                            <h2 class="product-title"><a href="product-details.html">Flor W</a></h2>
                             <div class="product-price">
                                 <span>€16.00</span>
-                                <del>€19.00</del>
                             </div>
                         </div>
                     </div>
@@ -807,11 +649,6 @@
                     <div class="ltn__product-item text-center">
                         <div class="product-img">
                             <a href="product-details.html"><img src="img/product/4.jpg" alt="#"></a>
-                            <div class="product-badge">
-                                <ul>
-                                    <li class="badge-1">Hot</li>
-                                </ul>
-                            </div>
                             <div class="product-hover-action product-hover-action-2">
                                 <ul>
                                     <li>
@@ -819,22 +656,11 @@
                                             <i class="icon-magnifier"></i>
                                         </a>
                                     </li>
-                                    <li class="add-to-cart">
-                                        <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
-                                            <span class="cart-text d-none d-xl-block">Add to Cart</span>
-                                            <span class="d-block d-xl-none"><i class="icon-handbag"></i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
-                                            <i class="icon-shuffle"></i>
-                                        </a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-title"><a href="product-details.html">Red Rose Bouquet</a></h2>
+                            <h2 class="product-title"><a href="product-details.html">Flor Q</a></h2>
                             <div class="product-price">
                                 <span>€20.00</span>
                             </div>
@@ -846,11 +672,6 @@
                     <div class="ltn__product-item text-center">
                         <div class="product-img">
                             <a href="product-details.html"><img src="img/product/5.png" alt="#"></a>
-                            <div class="product-badge">
-                                <ul>
-                                    <li class="badge-1">Hot</li>
-                                </ul>
-                            </div>
                             <div class="product-hover-action product-hover-action-2">
                                 <ul>
                                     <li>
@@ -860,7 +681,7 @@
                                     </li>
                                     <li class="add-to-cart">
                                         <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
-                                            <span class="cart-text d-none d-xl-block">Add to Cart</span>
+                                            <span class="cart-text d-none d-xl-block">Acrescentar ao carrinho</span>
                                             <span class="d-block d-xl-none"><i class="icon-handbag"></i></span>
                                         </a>
                                     </li>
@@ -873,7 +694,7 @@
                             </div>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-title"><a href="product-details.html">Heart's Desire</a></h2>
+                            <h2 class="product-title"><a href="product-details.html">Flor T</a></h2>
                             <div class="product-price">
                                 <span>€15.00</span>
                             </div>
@@ -886,7 +707,7 @@
     <!-- PRODUCT SLIDER AREA END -->
 
     <!-- BANNER AREA START -->
-    <div class="ltn__banner-area ">
+    <div id="conselhos_lg" class="ltn__banner-area ">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -900,9 +721,9 @@
         </div>
     </div>
     <!-- BANNER AREA END -->
-
+	
     <!-- BLOG AREA START (blog-3) -->
-    <div class="ltn__blog-area  pt-60 pb-30">
+    <div id="conselhos" class="ltn__blog-area  pt-60 pb-30">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -916,20 +737,19 @@
                 <div class="col-lg-12">
                     <div class="ltn__blog-item">
                         <div class="ltn__blog-img">
-                            <a href="blog-details.html"><img src="img/blog/1.jpg" alt="#"></a>
+                            <img src="img/blog/1.jpg" alt="#">
                         </div>
                         <div class="ltn__blog-brief">
                             <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-author d-none">
-                                        <a href="#">by: Admin</a>
-                                    </li>
-                                    <li>
-                                        <span> Plantas Frescas</span>
-                                    </li>
-                                </ul>
+								<h3 class="ltn__blog-title blog-title-line"> Reabasteça a água com frequência. Troque a água inteiramente a cada 2-3 dias.</h3>                                   
                             </div>
-                            <h3 class="ltn__blog-title blog-title-line"><a href="blog-details.html">Logo que possa coloque as suas flores num recipiente com água.</a></h3>
+                            <span>
+								As flores bebem muita água! Não é incomum que um grande arranjo de flores absorva toda a água nos primeiros dois dias em sua casa. 
+								Mantenha o recipiente cheio para evitar que as flores sequem e murchem. As flores também são altamente suscetíveis a bactérias que se acumulam quando os caules ficam na água. 
+								Mudar a água frequentemente, mesmo que a água não tenha acabado, ajudará a manter suas flores frescas por mais tempo (e evitará algum mau cheiro). Para arranjos grandes, 
+								incline cuidadosamente o recipiente sobre uma pia para que a água escorra sem atrapalhar o design. 
+								Em seguida, volte a encher o recipiente, derramando água suavemente na parte superior das flores.
+							</span>
                         </div>
                     </div>
                 </div>
@@ -941,19 +761,15 @@
                         </div>
                         <div class="ltn__blog-brief">
                             <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-author d-none">
-                                        <a href="#">by: Admin</a>
-                                    </li>
-                                    <li>
-                                        <span> Nov 18, 2020</span>
-                                    </li>
-                                    <li class="ltn__blog-comment">
-                                        <a href="#"><i class="icon-speech"></i> 2</a>
-                                    </li>
-                                </ul>
+								<h3 class="ltn__blog-title blog-title-line"> Corte pelo menos um centímetro do caule das suas flores antes de colocá-las num recipiente e sempre que trocar a água.</h3>                                   
                             </div>
-                            <h3 class="ltn__blog-title blog-title-line"><a href="blog-details.html">Lorem ipsum dolor sit amet con adipisicing elit sed </a></h3>
+                            <span>
+								Quando as flores ficam fora d'água no caminho para casa, as pontas do caule secam e as células
+								morrem, dificultando a absorção de água pelas flores. Ao cortar os caules antes de colocá-los na
+								água novamente, você expõe um tecido novo que pode sugar a água com muito mais eficiência. Ao
+								cortar os caules ao trocar a água do recipiente alguns dias depois, você remove o tecido das pontas que
+								pode estar se quebrando e, mais uma vez, expõe o tecido fresco que absorve mais água.
+							</span>
                         </div>
                     </div>
                 </div>
@@ -965,19 +781,14 @@
                         </div>
                         <div class="ltn__blog-brief">
                             <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-author d-none">
-                                        <a href="#">by: Admin</a>
-                                    </li>
-                                    <li>
-                                        <span> Nov 18, 2020</span>
-                                    </li>
-                                    <li class="ltn__blog-comment">
-                                        <a href="#"><i class="icon-speech"></i> 2</a>
-                                    </li>
-                                </ul>
+								<h3 class="ltn__blog-title blog-title-line">Mantenha as suas flores longe do calor e da luz forte.</h3>                                   
                             </div>
-                            <h3 class="ltn__blog-title blog-title-line"><a href="blog-details.html">Lorem ipsum dolor sit amet con adipisicing elit sed </a></h3>
+                            <span>
+								Às vezes, as pessoas pensam que deveriam colocar as suas flores em um parapeito de janela ensolarado, 
+								pois é onde uma planta ficaria mais feliz. No entanto, as flores de corte são, na verdade, o oposto das 
+								plantas em vasos. Eles estão no auge da perfeição. O sol e o calor irão encorajá-los a “amadurecer” e assim 
+								acelerar a sua morte. Em vez disso, mantenha as flores cortadas em um local fresco e escuro, se quiser que durem o máximo possível.
+							</span>
                         </div>
                     </div>
                 </div>
@@ -989,16 +800,16 @@
                         </div>
                         <div class="ltn__blog-brief">
                             <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-author d-none">
-                                        <a href="#">by: Admin</a>
-                                    </li>
-                                    <li>
-                                        <span> Nov 18, 2020</span>
-                                    </li>
-                                </ul>
+								<h3 class="ltn__blog-title blog-title-line">Evite colocar suas flores ao lado de frutas ou vegetais em fase de amadurecimento, especialmente bananas e maçãs.</h3>                                   
                             </div>
-                            <h3 class="ltn__blog-title blog-title-line"><a href="blog-details.html">Lorem ipsum dolor sit amet con adipisicing elit sed </a></h3>
+                            <span>
+								A fruta que amadurece emite um gás invisível e inodoro chamado etileno. Este gás é inofensivo para os humanos, mas mortal para as flores. 
+								A ciência por trás disso é assim: no mundo das plantas, as flores são as precursoras dos frutos. Depois que uma flor é polinizada, 
+								ela começa a se desenvolver em um fruto para que possa formar sementes e reiniciar o ciclo de vida da planta. O etileno é o hormônio 
+								gasoso da planta que induz a flor a soltar as pétalas e se tornar uma fruta. Conforme a fruta amadurece, ela continua a liberar etileno. 
+								Quando você coloca seu vaso de flores ao lado de frutas maduras, você as está expondo a esse gás e elas vão decidir que é melhor deixar 
+								cair suas pétalas da maneira que a Mãe Natureza pretendia.
+							</span>
                         </div>
                     </div>
                 </div>
@@ -1010,19 +821,34 @@
                         </div>
                         <div class="ltn__blog-brief">
                             <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-author d-none">
-                                        <a href="#">by: Admin</a>
-                                    </li>
-                                    <li>
-                                        <span> Nov 18, 2020</span>
-                                    </li>
-                                    <li class="ltn__blog-comment">
-                                        <a href="#"><i class="icon-speech"></i> 2</a>
-                                    </li>
-                                </ul>
+								<h3 class="ltn__blog-title blog-title-line">Depois de jogar fora o último arranjo, certifique-se de lavar o recipiente muito bem em água quente com sabão ou, melhor ainda, na máquina de lavar louça.</h3>                                   
                             </div>
-                            <h3 class="ltn__blog-title blog-title-line"><a href="blog-details.html">Lorem ipsum dolor sit amet con adipisicing elit sed </a></h3>
+                            <span>
+								As bactérias acumulam-se em vasos sujos e não desaparecem apenas porque o recipiente seca. Assim que você adicionar água novamente, o vaso 
+								estará novamente cheio de bactérias e o seu novo buquê estará sujeito às mesmas bactérias que mataram o último buquê. Dê às suas flores 
+								um ambiente limpo e livre de bactérias e elas durarão muito mais tempo.
+							</span>
+                        </div>
+                    </div>
+                </div>
+				<!-- Blog Item -->
+                <div class="col-lg-12">
+                    <div class="ltn__blog-item">
+                        <div class="ltn__blog-img">
+                            <a href="blog-details.html"><img src="img/blog/4.jpg" alt="#"></a>
+                        </div>
+                        <div class="ltn__blog-brief">
+                            <div class="ltn__blog-meta">
+								<h3 class="ltn__blog-title blog-title-line">Use “alimento para flores” para a maioria das flores.</h3>                                   
+                            </div>
+                            <span>
+								Embora trocar a água a cada dois dias possa ser tão eficaz para fazer as flores durarem mais, adicionar 
+								nutrientes pode também ser benéfico. Isso é especialmente verdadeiro se você for esquecido (ou preguiçoso)
+								e não trocar a água das flores regularmente. Você pode fazer o seu próprio alimento para flores adicionando 
+								cerca de 1 colher de chá de açúcar, 2 colheres de chá de suco de limão e 1 colher de chá de água sanitária 
+								ao seu recipiente antes de adicionar cerca de um litro de água morna da torneira. ATENÇÃO: existem 
+								algumas flores que realmente NÃO gostam deste procedimento. Algumas delas são: zínias, girassóis e gladíolos.
+							</span>
                         </div>
                     </div>
                 </div>
@@ -1030,51 +856,7 @@
             </div>
         </div>
     </div>
-    <!-- BLOG AREA END -->
-
-    <!-- BRAND LOGO AREA START -->
-    <div class="ltn__brand-logo-area  ltn__brand-logo-1 section-bg-1 pt-35 pb-35 plr--5">
-        <div class="container-fluid">
-            <div class="row ltn__brand-logo-active">
-                <div class="col-lg-12">
-                    <div class="ltn__brand-logo-item">
-                        <img src="img/brand-logo/1.png" alt="Brand Logo">
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="ltn__brand-logo-item">
-                        <img src="img/brand-logo/2.png" alt="Brand Logo">
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="ltn__brand-logo-item">
-                        <img src="img/brand-logo/3.png" alt="Brand Logo">
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="ltn__brand-logo-item">
-                        <img src="img/brand-logo/4.png" alt="Brand Logo">
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="ltn__brand-logo-item">
-                        <img src="img/brand-logo/5.png" alt="Brand Logo">
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="ltn__brand-logo-item">
-                        <img src="img/brand-logo/1.png" alt="Brand Logo">
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="ltn__brand-logo-item">
-                        <img src="img/brand-logo/2.png" alt="Brand Logo">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- BRAND LOGO AREA END -->
+    <!-- BLOG AREA END -->    
 
     <!-- FOOTER AREA START -->
     <footer class="ltn__footer-area" id="contactos">
@@ -1121,10 +903,8 @@
                             </div>
                             <div class="ltn__social-media mt-20 d-none">
                                 <ul>
-                                    <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
-                                    <li><a href="#" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://www.facebook.com/Florista-santos-lda-175777802606604" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1172,10 +952,8 @@
                             </div>
                             <div class="ltn__social-media mt-20 d-none">
                                 <ul>
-                                    <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
-                                    <li><a href="#" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://www.facebook.com/Florista-santos-lda-175777802606604" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
                                 </ul>
                             </div>                          
                         </div>
@@ -1204,9 +982,7 @@
                             </div>
                             <div class="ltn__social-media ">
                                 <ul>
-                                    <li><a href="#" title="Facebook"><i class="icon-social-facebook"></i></a></li>
-                                    <li><a href="#" title="Twitter"><i class="icon-social-twitter"></i></a></li>
-                                    <li><a href="#" title="Pinterest"><i class="icon-social-pinterest"></i></a></li>
+                                    <li><a href="https://www.facebook.com/Florista-santos-lda-175777802606604" title="Facebook"><i class="icon-social-facebook"></i></a></li>
                                     <li><a href="#" title="Instagram"><i class="icon-social-instagram"></i></a></li>
                                 </ul>
                             </div>
@@ -1240,13 +1016,13 @@
                                     </div>
                                     <div class="col-lg-6 col-12">
                                         <div class="modal-product-info shop-details-info pl-0">
-                                            <h3>Pink Flower Tree Red</h3>
+                                            <h3>Flor 1</h3>
                                             <div class="product-price-ratting mb-20">
                                                 <ul>
                                                     <li>
                                                         <div class="product-price">
-                                                            <span>$49.00</span>
-                                                            <del>$65.00</del>
+                                                            <span>€49.00</span>
+                                                            <del>€65.00</del>
                                                         </div>
                                                     </li>
                                                     <li>
@@ -1270,7 +1046,7 @@
                                                 <ul>
                                                     <li>
                                                         <div class="ltn__color-widget clearfix">
-                                                            <strong class="d-meta-title">Color</strong>
+                                                            <strong class="d-meta-title">Cor</strong>
                                                             <ul>
                                                                 <li class="theme"><a href="#"></a></li>
                                                                 <li class="green-2"><a href="#"></a></li>
@@ -1283,7 +1059,7 @@
                                                     </li>
                                                     <li>
                                                         <div class="ltn__size-widget clearfix mt-25">
-                                                            <strong class="d-meta-title">Size</strong>
+                                                            <strong class="d-meta-title">Tamanho</strong>
                                                             <ul>
                                                                 <li><a href="#">S</a></li>
                                                                 <li><a href="#">M</a></li>
@@ -1304,11 +1080,11 @@
                                                     </li>
                                                     <li>
                                                         <a href="#" class="theme-btn-1 btn btn-effect-1 d-add-to-cart" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
-                                                            <span>ADD TO CART</span>
+                                                            <span>Acrescente ao carrinho</span>
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="btn btn-effect-1 d-add-to-wishlist" title="Add to Cart" data-toggle="modal" data-target="#liton_wishlist_modal">
+                                                        <a href="#" class="btn btn-effect-1 d-add-to-wishlist" title="Acrescente ao carrinho" data-toggle="modal" data-target="#liton_wishlist_modal">
                                                             <i class="icon-heart"></i>
                                                         </a>
                                                     </li>
@@ -1316,7 +1092,7 @@
                                             </div>
                                             <div class="ltn__social-media mb-30">
                                                 <ul>
-                                                    <li class="d-meta-title">Share:</li>
+                                                    <li class="d-meta-title">Partilhe:</li>
                                                     <li><a href="#" title="Facebook"><i class="icon-social-facebook"></i></a></li>
                                                     <li><a href="#" title="Twitter"><i class="icon-social-twitter"></i></a></li>
                                                     <li><a href="#" title="Pinterest"><i class="icon-social-pinterest"></i></a></li>
@@ -1380,20 +1156,13 @@
                                             </div>
                                              <div class="modal-product-info">
                                                 <h5><a href="product-details.html">Heart's Desire</a></h5>
-                                                <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Cart</p>
+                                                <p class="added-cart"><i class="fa fa-check-circle"></i>  O artigo foi acrescentado ao carrinho</p>
                                                 <div class="btn-wrapper">
-                                                    <a href="cart.html" class="theme-btn-1 btn btn-effect-1">View Cart</a>
+                                                    <a href="cart.html" class="theme-btn-1 btn btn-effect-1">Ver carrinho</a>
                                                     <a href="checkout.html" class="theme-btn-2 btn btn-effect-2">Checkout</a>
                                                 </div>
                                              </div>
                                         </div>
-                                         <!-- additional-info -->
-                                         <div class="additional-info d-none--">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use (fiama10) discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                         </div>
                                     </div>
                                 </div>
                              </div>
@@ -1424,17 +1193,10 @@
                                             <img src="img/product/7.png" alt="#">
                                         </div>
                                          <div class="modal-product-info">
-                                            <h5><a href="product-details.html">Brake Conversion Kit</a></h5>
+                                            <h5><a href="product-details.html">Conversion Kit</a></h5>
                                             <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Wishlist</p>
                                             <div class="btn-wrapper">
                                                 <a href="wishlist.html" class="theme-btn-1 btn btn-effect-1">View Wishlist</a>
-                                            </div>
-                                         </div>
-                                         <!-- additional-info -->
-                                         <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
                                             </div>
                                          </div>
                                     </div>
