@@ -1,0 +1,27 @@
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary Files
+*.tmp
+*.bak
+*.log
+
+# PHP Files (not needed for static site)
+*.php
+
+# Build Files
+node_modules/
+dist/
+build/
+
+# Environment Files
+.env
+.env.local
