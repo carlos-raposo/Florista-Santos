@@ -321,6 +321,7 @@ font-family: 'Poppins', sans-serif;
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   font-family: var(--ltn__body-font); }
 
 * {
@@ -10744,6 +10745,7 @@ input.cart-plus-minus-box {
     font-size: 70px;
     line-height: 1.2;
     color: var(--ltn__secondary-color);
+    min-width: -webkit-fill-available;
     min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
     min-width: fit-content; }
