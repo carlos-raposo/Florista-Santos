@@ -10,6 +10,119 @@
     <meta name="author" content="Seu Nome Aqui">
     <meta name="keywords" content="portfolio, web design, florista, lisboa">
 
+    <!-- Language Toggle -->
+    <script>
+        // Simple language toggle system
+        const translations = {
+            pt: {
+                navInicio: "Início",
+                navCatalogo: "Catálogo",
+                navComprar: "Comprar",
+                navConselhos: "Conselhos",
+                navContactos: "Contactos",
+                portfolioBanner: "📁 Projeto de Portfólio - Website desenvolvido para demonstração de habilidades em web design",
+                sliderTitle1: "FLORES FRESCAS",
+                sliderSubtitle1: "A Melhor Seleção de Flores Naturais",
+                sliderDesc1: "Do viveiro para a mesa da sua sala.",
+                sliderTitle2: "ENTREGAS AO DOMICÍLIO",
+                sliderTitle3: "Flores Frescas",
+                sliderSubtitle3: "Especialistas em Orquídeas",
+                sliderDesc3: "Está a pensar em orquídeas? É natural, as delicadas flores da primavera ficam deslumbrantes em qualquer mesa da sala de estar.",
+                catalogTitle: "CATÁLOGO",
+                catalogCasamentos: "Casamentos",
+                catalogCelebracoes: "Celebrações",
+                catalogAgradecimentos: "Agradecimentos",
+                catalogPesames: "Pêsames",
+                comprarTitle: "COMPRAR",
+                productBuganvilias: "Buganvilias",
+                productEstrelicias: "Estrelícias",
+                productProtea: "Protea",
+                productOrquideas: "Orquídeas",
+                productJarros: "Jarros Coloridos",
+                productRosas: "Rosas Brancas",
+                productPeonias: "Peonias",
+                productSanseverias: "Sanseverias",
+                conselhosTitle: "CONSELHOS",
+                loja: "Loja",
+                aberto: "Aberto de 2ª a 6ª das 6 às 19 horas",
+                sabados: "Sábados das 6 às 14 horas",
+                todosDias: "Aberto todos os dias das 8 às 20 horas",
+                incluindo: "Incluíndo Sábados, Domingos e Feriados",
+                telefone: "Telefone",
+                portfolioFooter: "📁 Este site é mantido como parte do portfólio de desenvolvimento web e não está mais ativo para o cliente original."
+            },
+            en: {
+                navInicio: "Home",
+                navCatalogo: "Catalog",
+                navComprar: "Shop",
+                navConselhos: "Tips",
+                navContactos: "Contact",
+                portfolioBanner: "📁 Portfolio Project - Website developed to showcase web design skills",
+                sliderTitle1: "FRESH FLOWERS",
+                sliderSubtitle1: "The Best Selection of Natural Flowers",
+                sliderDesc1: "From the nursery to your living room table.",
+                sliderTitle2: "HOME DELIVERY",
+                sliderTitle3: "Fresh Flowers",
+                sliderSubtitle3: "Orchid Specialists",
+                sliderDesc3: "Thinking about orchids? Naturally, the delicate spring flowers look stunning on any living room table.",
+                catalogTitle: "CATALOG",
+                catalogCasamentos: "Weddings",
+                catalogCelebracoes: "Celebrations",
+                catalogAgradecimentos: "Thank You",
+                catalogPesames: "Sympathy",
+                comprarTitle: "SHOP",
+                productBuganvilias: "Bougainvillea",
+                productEstrelicias: "Bird of Paradise",
+                productProtea: "Protea",
+                productOrquideas: "Orchids",
+                productJarros: "Colorful Calla Lilies",
+                productRosas: "White Roses",
+                productPeonias: "Peonies",
+                productSanseverias: "Snake Plants",
+                conselhosTitle: "TIPS",
+                loja: "Store",
+                aberto: "Open Mon-Fri 6am-7pm",
+                sabados: "Saturdays 6am-2pm",
+                todosDias: "Open every day 8am-8pm",
+                incluindo: "Including Saturdays, Sundays and Holidays",
+                telefone: "Phone",
+                portfolioFooter: "📁 This website is maintained as part of a web development portfolio and is no longer active for the original client."
+            }
+        };
+
+        let currentLang = 'pt';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'pt' ? 'en' : 'pt';
+            localStorage.setItem('language', currentLang);
+            applyTranslations();
+        }
+
+        function applyTranslations() {
+            const lang = translations[currentLang];
+            document.querySelectorAll('[data-i18n]').forEach(elem => {
+                const key = elem.getAttribute('data-i18n');
+                if (lang[key]) {
+                    elem.textContent = lang[key];
+                }
+            });
+            // Update language button
+            const langBtn = document.querySelector('.language-toggle');
+            if (langBtn) {
+                langBtn.textContent = currentLang === 'pt' ? '🇬🇧 EN' : '🇵🇹 PT';
+            }
+        }
+
+        // Load saved language preference
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('language');
+            if (savedLang) {
+                currentLang = savedLang;
+            }
+            applyTranslations();
+        });
+    </script>
+
     <!-- Place favicon.png in the root directory -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <!-- Font Icons css -->
@@ -95,6 +208,12 @@
                         <!-- header-options -->
                         <div class="ltn__header-options">
                           <ul>
+                            <!-- Language Toggle Button -->
+                            <li>
+                                <button onclick="toggleLanguage()" class="language-toggle" style="background: none; border: 2px solid #589c75; color: #589c75; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-weight: 600; font-size: 14px; transition: all 0.3s;">
+                                    🇬🇧 EN
+                                </button>
+                            </li>
 							<li class="">
 								<div class="header-contact-search">
 								<!-- header-feature-item -->
@@ -144,11 +263,11 @@
                             <nav>
                                 <div class="ltn__main-menu">
                                     <ul>
-                                        <li class="menu-icon"><a href="#inicio">Início</a></li>   
-										<li class="menu-icon"><a href="#catalogo_lg">Catálogo</a></li>
-                                        <li class="menu-icon"><a href="#comprar_lg">Comprar</a></li>
-                                        <li class="menu-icon"><a href="#conselhos_lg">Conselhos</a></li>
-                                        <li><a href="#contactos_lg">Contactos</a></li>
+                                        <li class="menu-icon"><a href="#inicio" data-i18n="navInicio">Início</a></li>   
+										<li class="menu-icon"><a href="#catalogo_lg" data-i18n="navCatalogo">Catálogo</a></li>
+                                        <li class="menu-icon"><a href="#comprar_lg" data-i18n="navComprar">Comprar</a></li>
+                                        <li class="menu-icon"><a href="#conselhos_lg" data-i18n="navConselhos">Conselhos</a></li>
+                                        <li><a href="#contactos_lg" data-i18n="navContactos">Contactos</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -172,11 +291,11 @@
             </div>
             <div class="ltn__utilize-menu">
                 <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#catalogo">Catálogo</a></li>
-					<li><a href="#comprar">Comprar</a></li>
-                    <li><a href="#conselhos">Conselhos</a></li>
-                    <li><a href="#contactos">Contactos</a></li>
+                    <li><a href="#inicio" data-i18n="navInicio">Início</a></li>
+                    <li><a href="#catalogo" data-i18n="navCatalogo">Catálogo</a></li>
+					<li><a href="#comprar" data-i18n="navComprar">Comprar</a></li>
+                    <li><a href="#conselhos" data-i18n="navConselhos">Conselhos</a></li>
+                    <li><a href="#contactos" data-i18n="navContactos">Contactos</a></li>
                 </ul>
             </div>
             <div class="ltn__social-media-2">
@@ -204,10 +323,10 @@
                                     <div class="slide-item-info-inner ltn__slide-animation">
                                         <div class="slide-item-info">
                                             <div class="slide-item-info-inner ltn__slide-animation">
-                                                <h1 class="slide-title animated ">FLORES FRESCAS</h1>
-                                                <h6 class="slide-sub-title ltn__body-color slide-title-line animated">A Melhor Seleção de Flores Naturais</h6>
+                                                <h1 class="slide-title animated " data-i18n="sliderTitle1">FLORES FRESCAS</h1>
+                                                <h6 class="slide-sub-title ltn__body-color slide-title-line animated" data-i18n="sliderSubtitle1">A Melhor Seleção de Flores Naturais</h6>
                                                 <div class="slide-brief animated">
-                                                    <p>Do viveiro para a mesa da sua sala.</p>
+                                                    <p data-i18n="sliderDesc1">Do viveiro para a mesa da sua sala.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -319,7 +438,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title-area text-center">
-                        <h1 class="section-title section-title-border">CATÁLOGO</h1>
+                        <h1 class="section-title section-title-border" data-i18n="catalogTitle">CATÁLOGO</h1>
                     </div>
                 </div>
             </div>
@@ -341,7 +460,7 @@
                             </div>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-title">Casamentos</h2>
+                            <h2 class="product-title" data-i18n="catalogCasamentos">Casamentos</h2>
                         </div>
                     </div>
                 </div>
